@@ -54,7 +54,8 @@
 /* kpppk color palette */
 
 :root {
-  --color-1: #6BA8EF;
+  /* --color-1: #6BA8EF; */
+  --color-1: #4299FE;
   --color-2: #356ABA;
   --color-3: #0B387A;
   --color-4: #FF0000;
@@ -63,6 +64,9 @@
   --accent-color: #3F72AF;
   --accent-color-darker: hsl(from var(--accent-color) h s calc(l - 5));
   /* --accent-color-darker: hsl(212.5, 83.8%, 63.7%); */
+
+  --color-1-darker: hsl(from var(--color-1) h s calc(l - 5));
+
 }
 
 

@@ -1,5 +1,5 @@
 <template>
-  <svg width="16" height="16" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
-    <path d="M5.54779 9.09467C5.84069 8.80178 6.31556 8.80178 6.60846 9.09467L12.3281 14.8143L18.0478 9.09467C18.3407 8.80178 18.8156 8.80178 19.1085 9.09467C19.4013 9.38756 19.4013 9.86244 19.1085 10.1553L12.8585 16.4053C12.5656 16.6982 12.0907 16.6982 11.7978 16.4053L5.54779 10.1553C5.2549 9.86244 5.2549 9.38756 5.54779 9.09467Z" />
+  <svg class="ov-icon" style="font-size: 1.2em;" aria-hidden="true" width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
   </svg>
 </template>

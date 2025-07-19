@@ -1,5 +1,9 @@
 @import './base.css';
 
+
+
+/* TOP HEADER */
+
 .header-wrapper {
 }
 header {
@@ -60,9 +64,13 @@ header {
   color: var(--color-2);
 }
 
+
+
+/* NAV */
+
 .nav-wrapper {
-  height: 80px;
-  background-color: var(--accent-color);
+  padding: 12px 0;
+  background-color: var(--color-1);
 }
 nav {
   display: flex;
@@ -70,28 +78,43 @@ nav {
 }
 nav a {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   height: 40px;
   display: flex;
   align-items: center;
-  padding: 0 24px;
-  border-top: 1px solid transparent;
+  padding: 0 12px;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 @media (hover: hover) {
-  nav a:hover {
-    border-top: 1px solid rgba(255, 255, 255, .5);
-    background-color: var(--accent-color-darker);
+  nav a:hover, nav a.active {
+    background-color: var(--color-1-darker);
     /* background-color: var(--color-3); */
   }
 }
 .navlink-arrow {
   height: 16px;
 }
-.navlink-arrow svg {
+.nav-expanded-anchor {
+  position: relative;
+  top: 52px;
+}
+.nav-expanded-wrapper {
   position: absolute;
+  background-color: #fff;
+  width: 100%;
+}
+.nav-expanded {
+  padding: 20px 0;
+}
+.nav-expanded a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 2;
 }
 
 .slider-wrapper {
