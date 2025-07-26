@@ -9,7 +9,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 .header-right {
   display: flex;
@@ -155,33 +155,141 @@ nav a {
   height: 8px;
 }
 
+
+
+
+/* NEWS */
+
 .news-wrapper {
   background-color: #F9F7F7;
 }
 .news {
-  margin: 40px;
-  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
+.new-item {
+  width: 310px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.new-item:hover {
+  color: var(--color-2);
+}
+.new-pic {
+  margin-bottom: 20px;
+}
+.new-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.new-content {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+
+
+
+/* PROGRAMS */
 
 .programs-wrapper {
 }
 .programs {
-  margin: 40px;
-  height: 400px;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+.program-item {
+  width: 310px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+.program-item:hover {
+  color: var(--color-2);
+}
+.program-name {
+  font-size: 12px;
+  text-align: center;
+}
+
+
+
+
+/* FEEDBACK */
 
 .feedback-wrapper {
   background-color: #F9F7F7;
 }
 .feedback {
-  margin: 40px;
-  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+.feedback-left,
+.feedback-right { 
+  width: 48%;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
 }
 
+
+
+
+/* FOOTER */
+
 .footer-wrapper {
-  height: 200px;
-  background-color: var(--accent-color);
+  padding: 40px 0;
+  background-color: var(--color-1);
 }
 footer {
   color: #fff;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.footer-top {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  padding-bottom: 6px;
+}
+.footer-body {
+  padding: 16px;
+  display: flex;
+  font-size: 14px;
+}
+.footer-body ul {
+  padding: 0;
+  margin: 0;
+}
+.footer-body li {
+  list-style: none;
+}
+.useful-links {
+  margin-right: 48px;
+}
+.footer-bottom {
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  padding-top: 6px;
 }
