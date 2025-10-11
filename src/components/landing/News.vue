@@ -1,30 +1,41 @@
 <script setup lang="ts">
 
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
+import { storeToRefs } from 'pinia'
 
-const data = reactive({
-  news: [
-    {
-      id: 1,
-      title: 'Коронованный герцог графства станет частью наших традиций',
-      content: 'Вот вам яркий пример современных тенденций - укрепление и развитие внутренней структуры говорит о возможности переосмысления внешнеэкономических политик'
-    },
-    {
-      id: 2,
-      title: 'Коронованный герцог графства станет частью наших традиций',
-      content: 'Вот вам яркий пример современных тенденций - укрепление и развитие внутренней структуры говорит о возможности переосмысления внешнеэкономических политик'
-    },
-    {
-      id: 3,
-      title: 'Коронованный герцог графства станет частью наших традиций',
-      content: 'Вот вам яркий пример современных тенденций - укрепление и развитие внутренней структуры говорит о возможности переосмысления внешнеэкономических политик'
-    },
-    {
-      id: 4,
-      title: 'Коронованный герцог графства станет частью наших традиций',
-      content: 'Вот вам яркий пример современных тенденций - укрепление и развитие внутренней структуры говорит о возможности переосмысления внешнеэкономических политик'
-    },
-  ]
+import restAPI from '@/api/restapi'
+import { useGlobalStore } from '@/stores/global'
+import { type News } from '@/interfaces/db_interfaces'
+
+
+//
+
+
+const store = useGlobalStore()
+const { SERVER_BASE_PATH } = storeToRefs(store)
+
+let loaded = ref(false)
+let data : News[] = reactive([])
+
+async function getNews() {
+  let response = await restAPI.getLandingNews()
+  if (response.ok) {
+    let json = await response.json()
+    prepareNewsText(json.news_list)
+    data.push(...json.news_list)
+  }
+}
+
+function prepareNewsText(news : News[]) {
+  for (let i = 0; i < news.length; i++) {
+    let truncated = news[i].text?.substring(0, 250)
+    news[i].html = truncated?.replace(/\n/g, '<br />') + '...'
+  }
+}
+
+onMounted(() => {
+  getNews()
+  loaded.value = true
 })
 
 </script>
@@ -34,13 +45,13 @@ const data = reactive({
     <div class="mod-inner mtb-40">
       <div class="landing-title">Новости</div>
       <div class="news">
-        <RouterLink to="/" v-for="(n, ix) in data.news" :key="'news'+ix" class="new-item">
-          <img src="../../assets/img/news.png" alt="" class="new-pic" />
+        <RouterLink :to="'/news/'+n.id" v-for="(n, ix) in data" :key="'news'+ix" class="new-item">
+          <img :src="SERVER_BASE_PATH+n.image" class="new-pic" alt="" />
           <div class="new-title">{{ n.title }}</div>
-          <div class="new-content">{{ n.content }}</div>
+          <div class="new-content" v-html="n.html"></div>
         </RouterLink>
       </div>
-      <button class="btn btn-primary align-right">Показать все</button>
+      <RouterLink to="/news" class="btn btn-primary align-right">Показать все</RouterLink>
     </div>
   </div>
 </template>

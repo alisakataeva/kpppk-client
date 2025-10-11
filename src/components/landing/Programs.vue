@@ -1,50 +1,33 @@
 <script setup lang="ts">
 
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
+import { storeToRefs } from 'pinia'
 
-const data = reactive({
-  programs: [
-    {
-      id: 1,
-      name: '23.01.17 Мастер по ремонту и обслуживанию автомобилей',
-      img: '/src/assets/img/program1.png',
-    },
-    {
-      id: 2,
-      name: '23.01.17 Мастер по ремонту и обслуживанию автомобилей',
-      img: '/src/assets/img/program2.png',
-    },
-    {
-      id: 3,
-      name: '23.01.17 Мастер по ремонту и обслуживанию автомобилей',
-      img: '/src/assets/img/program1.png',
-    },
-    {
-      id: 4,
-      name: '23.01.17 Мастер по ремонту и обслуживанию автомобилей',
-      img: '/src/assets/img/program2.png',
-    },
-    {
-      id: 6,
-      name: '23.01.17 Мастер по ремонту и обслуживанию автомобилей',
-      img: '/src/assets/img/program2.png',
-    },
-    {
-      id: 7,
-      name: '23.01.17 Мастер по ремонту и обслуживанию автомобилей',
-      img: '/src/assets/img/program1.png',
-    },
-    {
-      id: 8,
-      name: '23.01.17 Мастер по ремонту и обслуживанию автомобилей',
-      img: '/src/assets/img/program2.png',
-    },
-    {
-      id: 5,
-      name: '23.01.17 Мастер по ремонту и обслуживанию автомобилей',
-      img: '/src/assets/img/program1.png',
-    },
-  ]
+import restAPI from '@/api/restapi'
+import { useGlobalStore } from '@/stores/global'
+import { type Program } from '@/interfaces/db_interfaces'
+
+
+//
+
+
+const store = useGlobalStore()
+const { SERVER_BASE_PATH } = storeToRefs(store)
+
+let loaded = ref(false)
+let data : Program[] = reactive([])
+
+async function getPrograms() {
+  let response = await restAPI.getLandingPrograms()
+  if (response.ok) {
+    let json = await response.json()
+    data.push(...json.program_list)
+  }
+}
+
+onMounted(() => {
+  getPrograms()
+  loaded.value = true
 })
 
 </script>
@@ -54,12 +37,12 @@ const data = reactive({
     <div class="mod-inner mtb-40">
       <div class="landing-title">Программы обучения</div>
       <div class="programs">
-        <RouterLink to="/" v-for="(n, ix) in data.programs" :key="'program'+ix" class="program-item">
-          <img :src="n.img" alt="" class="program-pic" />
-          <div class="program-name">{{ n.name }}</div>
+        <RouterLink :to="'/programs/'+p.id" v-for="(p, ix) in data" :key="'program'+ix" class="program-item">
+          <img :src="SERVER_BASE_PATH+p.image" alt="" class="program-pic" />
+          <div class="program-name">{{ p.code }} {{ p.name }}</div>
         </RouterLink>
       </div>
-      <button class="btn btn-primary align-right">Показать все</button>
+      <RouterLink to="/programs" class="btn btn-primary align-right">Показать все</RouterLink>
     </div>
   </div>
 </template>

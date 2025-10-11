@@ -1,24 +1,38 @@
 <script setup lang="ts">
-import  IconLogo from './icons/IconLogo.vue'
+import { ref, computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+import  IconLogo from './icons/IconLogoLatest.vue'
 import  IconLocation from './icons/IconLocation.vue'
 import  IconPhone from './icons/IconPhone.vue'
 import  IconMail from './icons/IconMail.vue'
 import  IconEye from './icons/IconEye.vue'
+
+
+//
+
+
+const route = useRoute()
+const currentPath = computed(() => route.fullPath)
+
 </script>
 
 <template>
-  <div class="mod-outer header-wrapper">
+  <div
+    class="mod-outer header-wrapper"
+    :class="{ 'densed' : currentPath != '/' }"
+  >
     <header class="mod-inner">
       <div class="header-right">
-        <div class="header-logo">
+        <RouterLink to="/" class="header-logo">
           <IconLogo />
-        </div>
-        <div class="header-title">
+        </RouterLink>
+        <RouterLink to="/" class="header-title">
           Коми-Пермяцкий профессионально-педагогический колледж
           <div class="header-title-subtext">
             Ордена знак Почёта
           </div>
-        </div>
+        </RouterLink>
       </div>
       <div class="header-left">
         <div class="header-contact-info">
@@ -31,7 +45,7 @@ import  IconEye from './icons/IconEye.vue'
               <IconPhone />
               8 800 555 35 35
             </span>
-            <span>
+            <span class="header-contact-mail">
               <IconMail />
               kppt.kud@mail.ru
             </span>

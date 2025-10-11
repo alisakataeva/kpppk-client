@@ -1,0 +1,158 @@
+[
+    {
+      "order": 1,
+      "key": "common_info",
+      "title": "Сведения об образовательной организации",
+      "href": null,
+      "sublinks": [
+        [
+          {
+            "order": 1,
+            "title": "Основные сведения",
+            "href": "/page/commoninfo/index"
+          },
+          {
+            "order": 2,
+            "title": "Структура и органы управления образовательной организацией",
+            "href": "/page/commoninfo/structure"
+          },
+          {
+            "order": 3,
+            "title": "Документы",
+            "href": "/page/commoninfo/docs"
+          },
+          {
+            "order": 4,
+            "title": "Образование",
+            "href": "/page/commoninfo/edu"
+          },
+          {
+            "order": 5,
+            "title": "Руководство",
+            "href": "/page/commoninfo/management"
+          },
+          {
+            "order": 6,
+            "title": "Педагогический состав",
+            "href": "/page/commoninfo/teachingstaff"
+          }
+        ],
+        [
+          {
+            "order": 7,
+            "title": "Материально-техническое обеспечение и оснащенность образовательного процесса",
+            "href": "/page/commoninfo/equipment"
+          },
+          {
+            "order": 8,
+            "title": "Доступная среда",
+            "href": "/page/commoninfo/accessible-environment"
+          },
+          {
+            "order": 9,
+            "title": "Платные образовательные услуги",
+            "href": "/page/commoninfo/paid-services"
+          },
+          {
+            "order": 10,
+            "title": "Финансово-хозяйственная деятельность",
+            "href": "/page/commoninfo/fin-activities"
+          },
+          {
+            "order": 11,
+            "title": "Вакантные места для приема (перевода) обучающихся",
+            "href": "/page/commoninfo/admission-vacancies"
+          },
+          {
+            "order": 12,
+            "title": "Стипендии и меры поддержки обучающихся",
+            "href": "/page/commoninfo/scholarship"
+          }
+        ],
+        [
+          {
+            "order": 13,
+            "title": "Международное сотрудничество",
+            "href": "/page/commoninfo/international"
+          },
+          {
+            "order": 14,
+            "title": "Организация питания в образовательной организации",
+            "href": "/page/commoninfo/catering"
+          },
+          {
+            "order": 15,
+            "title": "Образовательные стандарты и требования",
+            "href": "/page/commoninfo/edu-standards"
+          },
+          {
+            "order": 16,
+            "title": "Охрана труда",
+            "href": "/page/commoninfo/health-safety"
+          }
+        ]
+      ]
+    },
+    {
+      "order": 2,
+      "key": "applicants",
+      "title": "Поступающим",
+      "href": null,
+      "sublinks": [
+        [
+          {
+            "order": 1,
+            "title": "Приёмная комиссия",
+            "href": "/page/applicants/admission"
+          },
+          {
+            "order": 2,
+            "title": "Программы обучения",
+            "href": "/page/applicants/docs"
+          }
+        ]
+      ]
+    },
+    {
+      "order": 3,
+      "key": "students",
+      "title": "Студентам",
+      "href": null,
+      "sublinks": [
+        [
+          {
+            "order": 1,
+            "title": "Информация для обучающихся ГБПОУ \"КПППК\"",
+            "href": "/page/students/info"
+          }
+        ]
+      ]
+    },
+    {
+      "order": 6,
+      "key": "schedule",
+      "title": "Расписание",
+      "href": "/schedule"
+    },
+    {
+      "order": 4,
+      "key": "to_teachers",
+      "title": "Преподавателям",
+      "href": null,
+      "sublinks": [
+        [
+          {
+            "order": 1,
+            "title": "Методическая работа",
+            "href": "/metod-rabota"
+          }
+        ]
+      ]
+    },
+    {
+      "order": 5,
+      "key": "professionalitet",
+      "title": "Профессионалитет",
+      "href": "/prof"
+    }
+  ]

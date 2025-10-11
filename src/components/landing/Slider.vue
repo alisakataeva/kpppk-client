@@ -23,20 +23,20 @@ const visibleSlide4 = computed(() => {
 </script>
 
 <template>
-  <div class="mod-outer slider-wrapper">
-    <div class="mod-inner slider">
+  <div class="slider-wrapper">
+    <div class="slider">
       <div class="slider-imgs">
         <Transition name="slide-fade">
-          <img v-show="visibleSlide1" src="../../assets/img/slider.png" alt="" />
+          <img v-show="visibleSlide1" src="../../assets/img/slider.png" alt="" loading="lazy" />
         </Transition>
         <Transition name="slide-fade">
-          <img v-show="visibleSlide2" src="../../assets/img/slider2.jpg" alt="" />
+          <img v-show="visibleSlide2" src="../../assets/img/slider2.jpg" alt="" loading="lazy" />
         </Transition>
         <Transition name="slide-fade">
-          <img v-show="visibleSlide3" src="../../assets/img/slider3.jpg" alt="" />
+          <img v-show="visibleSlide3" src="../../assets/img/slider3.jpg" alt="" loading="lazy" />
         </Transition>
         <Transition name="slide-fade">
-          <img v-show="visibleSlide4" src="../../assets/img/slider4.jpg" alt="" />
+          <img v-show="visibleSlide4" src="../../assets/img/slider4.jpg" alt="" loading="lazy" />
         </Transition>
       </div>
         <!-- <div class="slide"></div> -->

@@ -59,6 +59,9 @@
   --color-2: #356ABA;
   --color-3: #0B387A;
   --color-4: #FF0000;
+  --color-5: #B30000;
+  --color-6: #E11A1A;
+  /* #1567C6 */
 
   /* --accent-color: #6BA8EF; */
   --accent-color: #3F72AF;
@@ -132,6 +135,7 @@ body {
 }
 
 .mod-outer {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,6 +145,103 @@ body {
   width: 1400px;
 }
 
+
+
+/* PAGE styles */
+
+.page-wrapper {
+  width: 1400px;
+  min-height: 75vh;
+  display: flex;
+  margin: 12px auto;
+}
+
+.page {
+  width: 100%;
+}
+
+.page-wrapper a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.page a:hover {
+  color: var(--color-2);
+}
+
+@media only screen and (max-width: 1400px) {
+  .page-wrapper {
+    width: 100%;
+  }
+  .page {
+    padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .page-wrapper {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .page {
+    width: 100%;
+  }
+}
+
+
+
+.breadcrumbs-outer {
+  background-color: #F9F7F7;
+  display: flex;
+  justify-content: center;
+}
+.breadcrumbs {
+  width: 1400px;
+  /* margin: 0 auto; */
+  font-size: 12px;
+  font-weight: 300;
+  /* display: flex; */
+  padding: 4px 0;
+}
+.breadcrumbs a {
+  color: #888;
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs-divider {
+  margin: 0 8px;
+  color: #888;
+}
+.breadcrumbs-current {
+
+}
+
+@media only screen and (max-width: 1400px) {
+  .mod-inner {
+    width: 1000px;
+  }
+  .breadcrumbs {
+    width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .mod-inner {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .breadcrumbs {
+    width: 100%;
+  }
+}
+
 .landing-title {
   font-weight: 700;
   font-size: 16px;
@@ -148,21 +249,43 @@ body {
   color: var(--color-3);
 }
 
-button.btn {
+.btn {
   background: #eee;
   border: none;
-  padding: 4px 12px;
+  /* padding: 4px 12px; */
   cursor: pointer;
-  font-size: 12px;
+  /* font-size: 12px; */
+  text-decoration: none;
+  padding: 6px 14px;
+  font-size: 13px;
+  /* border-radius: 8px; */
 }
 
-button.btn-primary {
+.btn-primary {
   background-color: var(--color-3);
   color: #fff;
   transition: 0.3s ease-in-out;
 }
-button.btn-primary:hover {
+.btn-primary:hover {
   background-color: var(--color-2);
+}
+
+.btn-warning {
+  background-color: var(--color-5);
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.btn-warning:hover {
+  background-color: var(--color-6);
+}
+
+.btn-default {
+  background-color: #ccc;
+  color: #333;
+  transition: 0.3s ease-in-out;
+}
+.btn-default:hover {
+  background-color: #eee;
 }
 
 .mtb-40 { margin-top: 40px; margin-bottom: 40px; }
@@ -201,4 +324,98 @@ input[type=text]:focus,
 textarea:focus {
   background-color: #F9F7F7;
   outline: none;
+}
+
+
+
+.mobile-sidemenu {
+  display: none;
+}
+aside.sidemenu {
+  min-width: 350px;
+  width: 350px;
+  background-color: #F9F7F7;
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+aside.sidemenu a.sidemenu-link {
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: .5em 1em;
+  border-bottom: 1px solid #fff;
+}
+aside.sidemenu a.sidemenu-link:hover {
+  background-color: #ccc;
+  color: #333;
+}
+aside.sidemenu a.sidemenu-link.active {
+  background-color: var(--color-2);
+  color: #fff;
+}
+
+
+.sidemenu-mob-open-btn {
+  margin: 1em;
+  padding: .5em;
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidemenu-mob-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  z-index: 100;
+  padding: 1em 0;
+}
+.sidemenu-mob-wrapper.opened {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidemenu-mob-close-btn {
+  cursor: pointer;
+}
+
+.sidemenu-mob {
+  padding: 1em;
+  width: 100%;
+}
+
+a.sidemenu-mob-link {
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  padding: .5em;
+}
+a.sidemenu-mob-link.active {
+  font-weight: 900;
+  background-color: #fff;
+  color: #333;
+}
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1000px) {
+  .desktop-sidemenu {
+    display: none;
+  }
+  .mobile-sidemenu {
+    display: block;
+  }
 }
