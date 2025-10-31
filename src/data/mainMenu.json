@@ -2,13 +2,13 @@
     {
       "order": 1,
       "key": "common_info",
-      "title": "Сведения об образовательной организации",
+      "title": "Общие сведения",
       "href": null,
       "sublinks": [
         [
           {
             "order": 1,
-            "title": "Основные сведения",
+            "title": "Общие сведения",
             "href": "/page/commoninfo/index"
           },
           {

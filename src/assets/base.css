@@ -252,13 +252,12 @@ body {
 .btn {
   background: #eee;
   border: none;
-  /* padding: 4px 12px; */
   cursor: pointer;
-  /* font-size: 12px; */
   text-decoration: none;
-  padding: 6px 14px;
+  padding: 8px 24px;
   font-size: 13px;
-  /* border-radius: 8px; */
+  border-radius: 18px;
+  font-weight: 700;
 }
 
 .btn-primary {

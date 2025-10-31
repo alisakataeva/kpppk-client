@@ -7,6 +7,7 @@ import  IconLocation from './icons/IconLocation.vue'
 import  IconPhone from './icons/IconPhone.vue'
 import  IconMail from './icons/IconMail.vue'
 import  IconEye from './icons/IconEye.vue'
+import  IconSearch from './icons/IconSearch.vue'
 
 
 //
@@ -19,11 +20,11 @@ const currentPath = computed(() => route.fullPath)
 
 <template>
   <div
-    class="mod-outer header-wrapper"
+    class="header-wrapper"
     :class="{ 'densed' : currentPath != '/' }"
   >
-    <header class="mod-inner">
-      <div class="header-right">
+    <header>
+      <div class="header-left">
         <RouterLink to="/" class="header-logo">
           <IconLogo />
         </RouterLink>
@@ -34,8 +35,14 @@ const currentPath = computed(() => route.fullPath)
           </div>
         </RouterLink>
       </div>
-      <div class="header-left">
-        <div class="header-contact-info">
+      <div class="header-middle">
+        <div class="header-search-wrapper">
+          <input type="text" class="search-input" />
+          <button class="search-btn"><IconSearch /></button>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header-info">
           <div class="header-location">
             <IconLocation />
             619000 Пермский край, г. Кудымкар, ул. Плеханова, 24
@@ -52,8 +59,7 @@ const currentPath = computed(() => route.fullPath)
           </div>
         </div>
         <div class="header-eye">
-          <IconEye />
-          <a href="#">версия для слабовидящих</a>
+          <a href="#"><IconEye /></a>
         </div>
       </div>
     </header>

@@ -27,16 +27,10 @@ const visibleSlide4 = computed(() => {
     <div class="slider">
       <div class="slider-imgs">
         <Transition name="slide-fade">
-          <img v-show="visibleSlide1" src="../../assets/img/slider.png" alt="" loading="lazy" />
+          <img v-show="visibleSlide1" src="../../assets/img/slider_1.png" alt="" />
         </Transition>
         <Transition name="slide-fade">
-          <img v-show="visibleSlide2" src="../../assets/img/slider2.jpg" alt="" loading="lazy" />
-        </Transition>
-        <Transition name="slide-fade">
-          <img v-show="visibleSlide3" src="../../assets/img/slider3.jpg" alt="" loading="lazy" />
-        </Transition>
-        <Transition name="slide-fade">
-          <img v-show="visibleSlide4" src="../../assets/img/slider4.jpg" alt="" loading="lazy" />
+          <img v-show="visibleSlide2" src="../../assets/img/slider_2.png" alt="" />
         </Transition>
       </div>
         <!-- <div class="slide"></div> -->
