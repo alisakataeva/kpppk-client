@@ -14,6 +14,7 @@ import Professionalitet from '@/views/Professionalitet.vue'
 import Schedule from '@/views/Schedule.vue'
 
 import PageNotFound from '@/views/PageNotFound.vue'
+import SiteMap from '@/views/SiteMap.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -61,6 +62,11 @@ const router = createRouter({
       path: '/schedule',
       name: 'schedule',
       component: Schedule
+    },
+    {
+      path: '/sitemap',
+      name: 'sitemap',
+      component: SiteMap
     },
     {
       path: '/page/:page_group/:page_code',

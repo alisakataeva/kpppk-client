@@ -162,13 +162,14 @@ body {
 
 .page-wrapper a {
   text-decoration: none;
-  color: #000;
+  /* color: #333; */
+  color: var(--color-2);
   transition: 0.3s ease-in-out;
   font-weight: 500;
 }
 
 .page a:hover {
-  color: var(--color-2);
+  color: var(--color-1);
 }
 
 @media only screen and (max-width: 1400px) {
@@ -417,4 +418,23 @@ a.sidemenu-mob-link.active {
   .mobile-sidemenu {
     display: block;
   }
+}
+
+
+
+.table table {
+  /* width: 800px;
+  margin: 0 auto; */
+  border-collapse: collapse;
+}
+.table th {
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  background-color: #f9f7f7;
+  font-weight: 600;
+}
+.table td {
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  font-weight: 300;
 }

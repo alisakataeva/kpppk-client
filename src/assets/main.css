@@ -247,7 +247,7 @@ button.search-btn svg {
   color: #000;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -683,11 +683,59 @@ footer a:hover {
 .footer-body li {
   list-style: none;
 }
-.useful-links {
+.useful-links, .social-media-links {
   margin-right: 48px;
+}
+.site-map-link {
+  font-weight: 700;
 }
 .footer-bottom {
   font-size: 12px;
   border-top: 1px solid rgba(255, 255, 255, .5);
   padding-top: 6px;
+}
+
+
+
+.sitemap {
+  width: 1600px;
+  display: flex;
+  margin: 8px auto;
+}
+.sitemap-column {
+  width: 33%;
+}
+.sitemap-block {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sitemap-header-link {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 1em;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+}
+.sitemap-header-link:hover {
+  text-decoration: underline;
+}
+.sitemap-header {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #333;
+}
+.sitemap-link-wrapper {
+  margin: 4px 0;
+}
+.sitemap-link {
+  color: var(--color-2);
+  text-decoration: none;
+  font-weight: 300;
+}
+.sitemap-link:hover {
+  text-decoration: underline;
 }

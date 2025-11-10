@@ -22,7 +22,7 @@
             </li>
           </ul>
         </div>
-        <div class="social-media">
+        <div class="social-media-links">
           <ul>
             <li><strong>Социальные сети:</strong></li>
             <li>
@@ -31,6 +31,11 @@
             <li>
               <a href="#">КПППК в Телеграм</a>
             </li>
+          </ul>
+        </div>
+        <div class="other-links">
+          <ul>
+            <li><a class="site-map-link" href="/sitemap">Карта сайта</a></li>
           </ul>
         </div>
       </div>

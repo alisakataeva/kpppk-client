@@ -42,6 +42,7 @@ async function processSideMenu() {
     if (response.ok) {
       let json = await response.json()
       let fromServer = json.page_list
+      fromServer.sort((a, b) => a.order > b.order)
       if (getSideMenu(state.pageGroup).length == 0) {
         updateSideMenu(state.pageGroup, fromServer)
         state.menu.splice(0, state.menu.length)

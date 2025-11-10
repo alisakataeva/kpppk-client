@@ -77,7 +77,7 @@ onMounted(() => {
         </div>
         <div class="program-name">Поварское и кондитерское дело</div>
       </RouterLink>
-      <RouterLink to="/programs" class="program-item">
+      <RouterLink to="/page/commoninfo/programs" class="program-item">
         <div class="program-icon-wrapper all-programs">
           <div class="program-icon"><IconArrowRight /></div>
         </div>

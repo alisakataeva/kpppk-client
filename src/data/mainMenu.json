@@ -8,7 +8,7 @@
         [
           {
             "order": 1,
-            "title": "Общие сведения",
+            "title": "Основные сведения",
             "href": "/page/commoninfo/index"
           },
           {
@@ -28,65 +28,70 @@
           },
           {
             "order": 5,
+            "title": "Образовательные программы",
+            "href": "/page/commoninfo/programs"
+          },
+          {
+            "order": 6,
             "title": "Руководство",
             "href": "/page/commoninfo/management"
           },
           {
-            "order": 6,
+            "order": 7,
             "title": "Педагогический состав",
             "href": "/page/commoninfo/teachingstaff"
           }
         ],
         [
           {
-            "order": 7,
+            "order": 8,
             "title": "Материально-техническое обеспечение и оснащенность образовательного процесса",
             "href": "/page/commoninfo/equipment"
           },
           {
-            "order": 8,
+            "order": 9,
             "title": "Доступная среда",
             "href": "/page/commoninfo/accessible-environment"
           },
           {
-            "order": 9,
+            "order": 10,
             "title": "Платные образовательные услуги",
             "href": "/page/commoninfo/paid-services"
           },
           {
-            "order": 10,
+            "order": 11,
             "title": "Финансово-хозяйственная деятельность",
             "href": "/page/commoninfo/fin-activities"
           },
           {
-            "order": 11,
+            "order": 12,
             "title": "Вакантные места для приема (перевода) обучающихся",
             "href": "/page/commoninfo/admission-vacancies"
           },
           {
-            "order": 12,
+            "order": 13,
             "title": "Стипендии и меры поддержки обучающихся",
             "href": "/page/commoninfo/scholarship"
           }
         ],
         [
           {
-            "order": 13,
+            "order": 14,
             "title": "Международное сотрудничество",
             "href": "/page/commoninfo/international"
           },
           {
-            "order": 14,
-            "title": "Организация питания в образовательной организации",
+            "order": 15,
+            "title": "Организация питания",
             "href": "/page/commoninfo/catering"
           },
           {
-            "order": 15,
+            "order": 16,
             "title": "Образовательные стандарты и требования",
             "href": "/page/commoninfo/edu-standards"
           },
           {
-            "order": 16,
+            "order": 17,
             "title": "Охрана труда",
             "href": "/page/commoninfo/health-safety"
           }
@@ -101,16 +106,39 @@
       "sublinks": [
         [
           {
+            "order": 0,
+            "title": "Перечень специальностей 2025-2026",
+            "href": "/page/applicants/admission2025"
+          },
+          {
             "order": 1,
             "title": "Приёмная комиссия",
             "href": "/page/applicants/admission"
           },
           {
             "order": 2,
-            "title": "Программы обучения",
+            "title": "Документы",
             "href": "/page/applicants/docs"
+          },
+          {
+            "order": 3,
+            "title": "Общежитие",
+            "href": "/page/applicants/dormitory"
           }
-        ]
+        ],
+        [
+          {
+            "order": 4,
+            "title": "Обучение на платной основе",
+            "href": "/page/applicants/paid-edu"
+          },
+          {
+            "order": 5,
+            "title": "День открытых дверей",
+            "href": "/page/applicants/open-day"
+          }
+        ],
+        []
       ]
     },
     {
