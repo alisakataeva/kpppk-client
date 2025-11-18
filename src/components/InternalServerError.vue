@@ -16,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 120px 0;
   }
   
   @media only screen and (max-width: 1000px) {

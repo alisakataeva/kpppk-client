@@ -36,8 +36,8 @@ class RestAPI {
 
   //
 
-  getNews = () => {
-    return this.postAjax("/news/list")
+  getNews = (page: number) => {
+    return this.postAjax("/news/pagination", { page })
   }
 
   getLandingNews = () => {

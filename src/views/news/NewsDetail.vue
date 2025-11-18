@@ -6,8 +6,12 @@ import { storeToRefs } from 'pinia'
 import restAPI from '@/api/restapi'
 import { useGlobalStore } from '@/stores/global'
 import { type News } from '@/interfaces/db_interfaces'
+import { convertDate } from '@/utils/helpers'
+
 import NotFound from '@/components/NotFound.vue'
 import Loading from '@/components/Loading.vue'
+
+import IconCalendar from '@/components/icons/IconCalendar.vue'
 
 
 //
@@ -65,11 +69,11 @@ onMounted(() => {
         <div class="news-detail-title">
           {{ state.news.title }}
         </div>
+        <div class="news-detail-date">
+          <IconCalendar /> {{ convertDate(state.news.created_at) }}
+        </div>
         <div class="news-detail-img">
           <img :src="SERVER_BASE_PATH+state.news.image" alt="" />
-        </div>
-        <div class="news-detail-date">
-          {{ state.news.created_at }}
         </div>
         <div class="news-detail-text">
           <span v-html="state.news.html"></span>

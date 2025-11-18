@@ -438,3 +438,46 @@ a.sidemenu-mob-link.active {
   border: 1px solid #ccc;
   font-weight: 300;
 }
+
+
+
+
+
+/* PAGINATION */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-btn {
+  cursor: pointer;
+  padding: 4px 12px;
+  font-weight: 300;
+  color: #333;
+  margin: 0 4px;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+}
+.pagination-btn.is-prev-btn,
+.pagination-btn.is-next-btn {
+  background-color: #f4f4f4;
+}
+.pagination-btn:hover {
+  background-color: #ececec;
+}
+
+.pagination-btn.is-active {
+  font-weight: 700;
+  background-color: var(--color-1);
+  color: #fff;
+} 
+
+.pagination-dots {
+  color: #999;
+  padding: 4px 12px;
+}
