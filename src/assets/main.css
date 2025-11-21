@@ -449,7 +449,7 @@ button.search-btn svg {
 .news {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 20px 20px 40px 20px;
 }
 .new-item {
   width: 23%;
@@ -584,8 +584,13 @@ button.search-btn svg {
     flex-direction: column;
     align-items: center;
   }
+  .programs {
+    padding: 20px 0;
+  }
   .program-item {
     width: 100%;
+    margin: 20px 0;
+    padding: 0 60px;
   }
 }
 
@@ -672,10 +677,16 @@ footer a:hover {
   padding-bottom: 6px;
 }
 .footer-body {
-  padding: 16px;
   display: flex;
+  justify-content: space-between;
+  padding: 16px;
   font-size: 14px;
 }
+
+.footer-body-left {
+  display: flex;
+}
+
 .footer-body ul {
   padding: 0;
   margin: 0;
@@ -683,7 +694,7 @@ footer a:hover {
 .footer-body li {
   list-style: none;
 }
-.useful-links, .social-media-links {
+.footer-body-column {
   margin-right: 48px;
 }
 .site-map-link {

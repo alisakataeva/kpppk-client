@@ -116,6 +116,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .news {
+    margin: 20px 0;
+  }
   .news-detail {
     width: 100%;
     padding: 20px;

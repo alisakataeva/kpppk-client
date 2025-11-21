@@ -158,6 +158,7 @@ body {
 
 .page {
   width: 100%;
+  margin: 0 20px;
 }
 
 .page-wrapper a {
@@ -249,6 +250,9 @@ body {
   text-transform: uppercase;
   color: var(--color-3);
 }
+.landing-title.is-white {
+  color: #fff;
+}
 
 .btn {
   background: #eee;
@@ -257,17 +261,37 @@ body {
   text-decoration: none;
   padding: 8px 24px;
   font-size: 13px;
-  border-radius: 18px;
+  /* border-radius: 18px; */
+  border-radius: 8px;
   font-weight: 700;
 }
 
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
 .btn-primary {
-  background-color: var(--color-3);
+  /* background-color: var(--color-3); */
+  background: var(--color-1);
   color: #fff;
   transition: 0.3s ease-in-out;
 }
 .btn-primary:hover {
   background-color: var(--color-2);
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.btn-light:hover {
+  background-color: #eee;
 }
 
 .btn-warning {

@@ -51,7 +51,7 @@ onMounted(() => {
           <div class="new-content" v-html="n.html"></div>
         </RouterLink>
       </div>
-      <RouterLink to="/news" class="btn btn-primary align-right">Показать все</RouterLink>
+      <RouterLink to="/news" class="btn btn-primary align-right">Показать больше</RouterLink>
     </div>
   </div>
 </template>

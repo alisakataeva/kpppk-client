@@ -1,3 +1,12 @@
+export interface Event {
+  id: number;
+  title: string;
+  text: string;
+  html?: string;
+  date: string;
+  time: string;
+}
+
 export interface News {
   id: number;
   title: string;
