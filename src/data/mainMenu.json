@@ -27,11 +27,6 @@
             "href": "/page/commoninfo/edu"
           },
           {
-            "order": 5,
-            "title": "Образовательные программы",
-            "href": "/page/commoninfo/programs"
-          },
-          {
             "order": 6,
             "title": "Руководство",
             "href": "/page/commoninfo/management"
@@ -45,13 +40,8 @@
         [
           {
             "order": 8,
-            "title": "Материально-техническое обеспечение и оснащенность образовательного процесса",
-            "href": "/page/commoninfo/equipment"
-          },
-          {
-            "order": 9,
-            "title": "Доступная среда",
-            "href": "/page/commoninfo/accessible-environment"
+            "title": "Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда",
+            "href": "/page/commoninfo/equipment-and-environment"
           },
           {
             "order": 10,
