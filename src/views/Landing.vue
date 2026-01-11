@@ -8,7 +8,6 @@ import Feedback from '../components/landing/Feedback.vue'
 
 <template>
   <Slider />
-  <Events />
   <News />
   <Programs />
   <Feedback />

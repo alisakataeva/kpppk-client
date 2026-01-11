@@ -27,6 +27,11 @@ let openedTab = ref('')
 function toggleNav() {
   navOpened.value = !navOpened.value
   navNotOpenedYet.value = false
+  if (navOpened.value) {
+    document.body.classList.add('sidebar-opened');
+  } else {
+    document.body.classList.remove('sidebar-opened');
+  }
 }
 
 function toggleDropdown(tab: string) {
@@ -40,6 +45,7 @@ function toggleDropdown(tab: string) {
 watch(route, (to) => {
   navOpened.value = false
   openedTab.value = ''
+  document.body.classList.remove('sidebar-opened');
 }, {flush: 'pre', immediate: true, deep: true})
 
 </script>
@@ -72,6 +78,7 @@ watch(route, (to) => {
 
             <!-- Regular Link -->
             <RouterLink
+              class="regular-link"
               v-if="link.href"
               :to="link.href"
             >
@@ -89,8 +96,8 @@ watch(route, (to) => {
                 v-if="link.sublinks && link.sublinks?.length > 0"
                 class="navlink-arrow"
               >
-                <div v-show="openedTab == link.key"><IconChevronUp /></div>
-                <div v-show="openedTab != link.key"><IconChevronDown /></div>
+                <IconChevronUp v-show="openedTab == link.key" />
+                <IconChevronDown v-show="openedTab != link.key" />
               </div>
             </div>
 

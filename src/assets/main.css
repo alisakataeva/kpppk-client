@@ -53,9 +53,15 @@ header {
   justify-content: center;
   width: 100%;
 }
+.on-search-page .header-middle {
+  display: none;
+}
+
+
 .header-search-wrapper {
   display: flex;
 }
+
 input.search-input {
   border: 2px solid var(--color-2);
   border-radius: 24px;
@@ -91,6 +97,7 @@ button.search-btn svg {
 .header-info svg {
   color: var(--color-1);
   height: 15px;
+  margin-right: 2px;
 }
 .header-location {
   display: flex;
@@ -121,7 +128,13 @@ button.search-btn svg {
   margin-right: 6px;
 }
 .header-eye a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-2);
+}
+.header-eye .mobile-label {
+  display: none;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -130,7 +143,6 @@ button.search-btn svg {
   }
   .header-right {
     min-width: 500px;
-    
   }
 }
 
@@ -139,27 +151,68 @@ button.search-btn svg {
     flex-direction: column;
   }
   .header-left {
-    padding: 0 20px 20px 20px;
-  }
-  .header-info {
-    text-align: center;
     padding-bottom: 20px;
   }
+  /* .header-info {
+    padding-bottom: 20px;
+  } */
   .header-eye {
     justify-content: center;
+    padding-left: 0;
   }
   .header-middle {
     justify-content: left;
+    padding-bottom: 20px;
   }
   .header-right {
-    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-info {
+    align-items: flex-start;
+  }
+  .header-contact {
+    flex-direction: column;
+  }
+  .header-contact-phone {
+    margin-bottom: 4px;
+  }
+  .header-eye {
+    border-left: 0;
+    border-top: 1px solid #eee;
+    width: 100%;
+    justify-content: unset;
+  }
+  .header-eye .mobile-label {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-left {
+    min-width: unset;
+  }
+  .header-right {
+    min-width: unset;
+  }
+  .header-search-wrapper {
+    width: 100%;
+  }
+  .header-search-wrapper .search-input {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .header-logo svg {
+  /* .header-logo svg {
     min-width: 80px;
     width: 80px;
+  } */
+  .header-title {
+    font-size: 14px;
+  }
+  .header-title-subtext {
+    display: none;
   }
 }
 
@@ -181,8 +234,7 @@ button.search-btn svg {
   flex-wrap: wrap;
 }
 .dropdown-link,
-.nav-contents a,
-.mobile-nav-contents a {
+.regular-link {
   color: #fff;
   font-size: 12px;
   font-weight: 700;
@@ -258,15 +310,6 @@ button.search-btn svg {
 }
 .mobile-nav {
   display: none;
-}
-.mobile-dropdown {
-  border-top: 1px solid #ffffff66;
-  border-bottom: 1px solid #ffffff66;
-}
-.mobile-dropdown a {
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: none;
 }
 .nav-mobile-icon svg {
   color: #fff;
@@ -487,7 +530,7 @@ button.search-btn svg {
 }
 
 @media only screen and (max-width: 600px) {
-  .news-wrapper div {
+  .news-wrapper > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -617,6 +660,7 @@ button.search-btn svg {
   height: 250px;
   position: relative;
   border: none;
+  margin: 0;
 }
 .feedback-form {
   display: flex;
@@ -639,7 +683,14 @@ button.search-btn svg {
 }
 
 @media only screen and (max-width: 600px) {
-  .feedback-wrapper div {
+  .feedback {
+    width: 100%;
+  }
+  .feedback-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .feedback-wrapper > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -706,47 +757,17 @@ footer a:hover {
   padding-top: 6px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .footer-body {
+    flex-direction: column;
+  }
 
+  .footer-body-left {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 
-.sitemap {
-  width: 1600px;
-  display: flex;
-  margin: 8px auto;
-}
-.sitemap-column {
-  width: 33%;
-}
-.sitemap-block {
-  margin: 32px 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.sitemap-header-link {
-  color: #333;
-  font-size: 18px;
-  margin-bottom: 1em;
-  font-weight: 700;
-  text-decoration: none;
-  display: block;
-}
-.sitemap-header-link:hover {
-  text-decoration: underline;
-}
-.sitemap-header {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 16px;
-  color: #333;
-}
-.sitemap-link-wrapper {
-  margin: 4px 0;
-}
-.sitemap-link {
-  color: var(--color-2);
-  text-decoration: none;
-  font-weight: 300;
-}
-.sitemap-link:hover {
-  text-decoration: underline;
+  .footer-body-column {
+    margin-bottom: 10px;
+  }
 }

@@ -147,12 +147,6 @@
       ]
     },
     {
-      "order": 6,
-      "key": "schedule",
-      "title": "Расписание",
-      "href": "/schedule"
-    },
-    {
       "order": 4,
       "key": "to_teachers",
       "title": "Преподавателям",

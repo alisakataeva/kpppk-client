@@ -10,7 +10,7 @@ import TopNavMobile from '@/components/nav/TopNavMobile.vue'
 
 
 const route = useRoute()
-const currentPath = computed(() => route.fullPath)
+const currentPath = computed(() => route.path)
 
 </script>
 

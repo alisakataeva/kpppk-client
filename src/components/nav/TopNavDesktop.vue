@@ -70,6 +70,7 @@ watch(route, (to) => {
 
           <!-- Regular Link -->
           <RouterLink
+            class="regular-link"
             v-if="link.href"
             :to="link.href"
           >

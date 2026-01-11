@@ -1,0 +1,36 @@
+.search-page {
+  width: 1600px;
+  margin: 20px auto;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+.search-page input.search-input {
+  width: 1000px;
+}
+
+@media only screen and (max-width: 1640px) {
+  .search-page {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .search-page {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+
+
+.search-page hr {
+  margin: 24px 0;
+  border: 0px;
+  border-top: 1px solid #bbb;
+}

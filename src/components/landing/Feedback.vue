@@ -12,7 +12,7 @@
           </form>
         </div>
         <div class="feedback-right">
-          <iframe src="https://yandex.ru/map-widget/v1/?ll=54.669457%2C59.019288&mode=search&oid=29765002541&ol=biz&z=17.02" width="660" height="250"  allowfullscreen="true" style="position:relative;border:none;"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=54.669457%2C59.019288&mode=search&oid=29765002541&ol=biz&z=17.02"  allowfullscreen="true"></iframe>
         </div>
       </div>
     </div>

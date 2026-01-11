@@ -1,3 +1,9 @@
+<script setup lang="ts">
+
+import IconMap from './icons/IconMap.vue'
+
+</script>
+
 <template>
   <div class="mod-outer footer-wrapper">
     <footer class="mod-inner">
@@ -67,7 +73,7 @@
         <div class="footer-body-right">
           <div class="other-links">
             <ul>
-              <li><a class="site-map-link" href="/sitemap">Карта сайта</a></li>
+              <li><a class="site-map-link" href="/sitemap"><IconMap /> Карта сайта</a></li>
             </ul>
           </div>
         </div>
@@ -78,3 +84,34 @@
     </footer>
   </div>
 </template>
+
+
+<style>
+
+.site-map-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: #ffffff20;
+  transition: 0.3s all ease-in-out;
+}
+.site-map-link:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #0b387a;
+}
+
+.site-map-link svg {
+  fill: #fff;
+  width: 20px;
+  margin-right: 4px;
+  transition: 0.3s all ease-in-out;
+}
+.site-map-link:hover svg {
+  fill: #0b387a;
+}
+
+</style>

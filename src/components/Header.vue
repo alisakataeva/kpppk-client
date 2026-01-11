@@ -58,9 +58,12 @@ const currentPath = computed(() => route.fullPath)
             </span>
           </div>
         </div>
-        <div class="header-eye">
-          <a href="#"><IconEye /></a>
-        </div>
+        <!-- <div class="header-eye">
+          <a href="#" class="header-eye-link">
+            <IconEye />
+            <div class="mobile-label">Версия для слабовидящих</div>
+          </a>
+        </div> -->
       </div>
     </header>
   </div>
