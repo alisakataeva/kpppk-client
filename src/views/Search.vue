@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue';
 
 import  IconSearch from '../components/icons/IconSearch.vue'

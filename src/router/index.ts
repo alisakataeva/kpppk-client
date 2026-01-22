@@ -12,7 +12,6 @@ import ProgramList from '@/views/programs/ProgramList.vue'
 import ProgramDetail from '@/views/programs/ProgramDetail.vue'
 
 import CommonInfoPage from '@/views/pages/CommonInfoPage.vue'
-import ApplicantPage from '@/views/pages/ApplicantsPage.vue'
 
 import Professionalitet from '@/views/Professionalitet.vue'
 import Schedule from '@/views/Schedule.vue'

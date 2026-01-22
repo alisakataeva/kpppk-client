@@ -50,11 +50,11 @@ const currentPath = computed(() => route.fullPath)
           <div class="header-contact">
             <span class="header-contact-phone">
               <IconPhone />
-              8 800 555 35 35
+              <a href="tel:+7342041108">+7 342 604 11 08</a>
             </span>
             <span class="header-contact-mail">
               <IconMail />
-              kppt.kud@mail.ru
+              <a href="mailto:kppt.kud@mail.ru">kppt.kud@mail.ru</a>
             </span>
           </div>
         </div>

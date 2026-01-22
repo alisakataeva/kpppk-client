@@ -112,9 +112,17 @@ button.search-btn svg {
   display: flex;
   align-items: center;
 }
+.header-contact-phone a {
+  text-decoration: none;
+  color: var(--color-3);
+}
 .header-contact-mail {
   display: flex;
   align-items: center;
+}
+.header-contact-mail a {
+  text-decoration: none;
+  color: var(--color-3);
 }
 .header-eye {
   display: flex;
@@ -204,15 +212,21 @@ button.search-btn svg {
 }
 
 @media only screen and (max-width: 600px) {
-  /* .header-logo svg {
-    min-width: 80px;
-    width: 80px;
-  } */
-  .header-title {
-    font-size: 14px;
-  }
   .header-title-subtext {
     display: none;
+  }
+  .header-right {
+    font-size: 16px;
+  }
+  .header-info svg {
+    height: 18px;
+    margin-right: .75em;
+  }
+  .header-contact-phone a {
+    font-weight: bold;
+  }
+  .header-contact-mail a {
+    font-weight: bold;
   }
 }
 
@@ -496,7 +510,7 @@ button.search-btn svg {
 }
 .new-item {
   width: 23%;
-  line-height: 1.2;
+  line-height: 1.5;
   text-decoration: none;
   color: #000;
   transition: 0.3s ease-in-out;
@@ -509,14 +523,15 @@ button.search-btn svg {
   margin-bottom: 20px;
   height: 160px;
   object-fit: cover;
+  border-radius: 8px;
 }
 .new-title {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 .new-content {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 1000px) {
