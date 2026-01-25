@@ -66,14 +66,16 @@ onMounted(() => {
   <div class="page-wrapper">
     <template v-if="pageStatus == 'loaded'">
       <div class="news-detail page">
-        <div class="news-detail-title">
-          {{ state.news.title }}
-        </div>
-        <div class="news-detail-date">
-          <IconCalendar /> {{ convertDate(state.news.created_at) }}
-        </div>
-        <div class="news-detail-img">
-          <img :src="SERVER_BASE_PATH+state.news.image" alt="" />
+        <div class="news-detail-header">
+          <div class="news-detail-date">
+            <IconCalendar /> {{ convertDate(state.news.created_at) }}
+          </div>
+          <div class="news-detail-title">
+            {{ state.news.title }}
+          </div>
+          <div class="news-detail-img">
+            <img :src="SERVER_BASE_PATH+state.news.image" alt="" />
+          </div>
         </div>
         <div class="news-detail-text">
           <span v-html="state.news.html"></span>

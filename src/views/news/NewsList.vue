@@ -82,7 +82,7 @@ async function getNews() {
 
 function prepareNewsText(news : News[]) {
   for (let i = 0; i < news.length; i++) {
-    let truncated = news[i].text?.substring(0, 600)
+    let truncated = news[i].text?.substring(0, 200)
     news[i].html = truncated?.replace(/\n/g, '<br />')
   }
 }
@@ -112,23 +112,27 @@ watch(route, (to) => {
 
   <div class="page-wrapper">
     <template v-if="pageStatus == 'loaded'">
+
       <div class="news-list page">
-        <div class="news-block"
-          v-for="(n, ix) in data" :key="'news-'+ix"
-        >
-          <div class="news-block-img">
-            <img :src="SERVER_BASE_PATH+n.image" alt="" />
-          </div>
-          <div class="news-block-content">
-            <div class="news-block-title">
-              <RouterLink :to="'/news/'+n.id">{{ n.title }}</RouterLink>
+
+        <div class="news-blocks">
+          <div class="news-block"
+            v-for="(n, ix) in data" :key="'news-'+ix"
+          >
+            <div class="news-block-img">
+              <img :src="SERVER_BASE_PATH+n.image" alt="" />
             </div>
-            <div class="news-block-date">
-              <IconCalendar /> {{ convertDate(n.created_at) }}
-            </div>
-            <div class="news-block-text">
-              <span v-html="n.html"></span>...
-              <RouterLink :to="'/news/'+n.id">Читать далее</RouterLink>
+            <div class="news-block-content">
+              <div class="news-block-title">
+                <RouterLink :to="'/news/'+n.id">{{ n.title }}</RouterLink>
+              </div>
+              <div class="news-block-date">
+                <IconCalendar /> {{ convertDate(n.created_at) }}
+              </div>
+              <div class="news-block-text">
+                <span v-html="n.html"></span>...
+                <RouterLink :to="'/news/'+n.id">Читать далее</RouterLink>
+              </div>
             </div>
           </div>
         </div>
@@ -196,8 +200,9 @@ watch(route, (to) => {
           </div>
 
         </div>
-        
+
       </div>
+
     </template>
     <template v-else-if="pageStatus == 'internalerror'">
       <InternalServerError />
