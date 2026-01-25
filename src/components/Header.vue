@@ -44,8 +44,7 @@ const currentPath = computed(() => route.fullPath)
       <div class="header-right">
         <div class="header-info">
           <div class="header-location">
-            <IconLocation />
-            619000 Пермский край, г. Кудымкар, ул. Плеханова, 24
+            <div class="header-location-inner"><IconLocation /> 619000 Пермский край, г. Кудымкар, ул. Плеханова, 24</div>
           </div>
           <div class="header-contact">
             <span class="header-contact-phone">

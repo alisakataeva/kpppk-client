@@ -84,7 +84,7 @@ button.search-btn svg {
   justify-content: right;
   font-size: 13px;
   font-weight: 500;
-  min-width: 500px;
+  width: 100%;
 }
 .header-info {
   display: flex;
@@ -103,6 +103,9 @@ button.search-btn svg {
   display: flex;
   align-items: center;
   margin-bottom: 4px;
+}
+.header-location-inner {
+  text-align: right;
 }
 .header-contact {
   display: flex;
@@ -147,9 +150,6 @@ button.search-btn svg {
 
 @media only screen and (max-width: 1600px) {
   .header-left {
-    min-width: 500px;
-  }
-  .header-right {
     min-width: 500px;
   }
 }
@@ -208,6 +208,9 @@ button.search-btn svg {
   }
   .header-search-wrapper .search-input {
     width: 100%;
+  }
+  .header-location-inner {
+    text-align: left;
   }
 }
 
@@ -455,14 +458,35 @@ button.search-btn svg {
   width: 100vw;
 }
 .slider-imgs {
-  height: 400px;
+  width: 100vw;
 }
 .slider-imgs img {
+  display: block;
+}
+.slider-slide {
   position: absolute;
   object-fit: cover;
   width: inherit;
   height: inherit;
 }
+.slider-imgs .slide-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .slider-imgs .slide-desktop {
+    display: none;
+  }
+  .slider-imgs .slide-mobile {
+    display: block;
+  }
+}
+
+.slider-bg {
+  width: inherit;
+  height: inherit;
+}
+
 .slider-controls {
   display: flex;
   justify-content: center;
@@ -486,15 +510,6 @@ button.search-btn svg {
   width: 8px;
   height: 8px;
 }
-
-
-
-@media only screen and (max-width: 1400px) {
-  .slider-imgs {
-    width: 100vw;
-  }
-}
-
 
 
 
