@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
 import  IconLogo from './icons/IconLogoLatest.vue'
 import  IconLocation from './icons/IconLocation.vue'
@@ -14,7 +14,15 @@ import  IconSearch from './icons/IconSearch.vue'
 
 
 const route = useRoute()
+const router = useRouter()
 const currentPath = computed(() => route.fullPath)
+
+let searchText = ref("")
+
+function goToSearchPage() {
+  router.push(`/search?text=${searchText.value}`)
+  searchText.value = ""
+}
 
 </script>
 
@@ -37,8 +45,8 @@ const currentPath = computed(() => route.fullPath)
       </div>
       <div class="header-middle">
         <div class="header-search-wrapper">
-          <input type="text" class="search-input" />
-          <button class="search-btn"><IconSearch /></button>
+          <input @keyup.enter="goToSearchPage" type="text" class="search-input" v-model="searchText" />
+          <button @click="goToSearchPage" class="search-btn"><IconSearch /></button>
         </div>
       </div>
       <div class="header-right">

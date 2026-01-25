@@ -1,10 +1,21 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
+import { RouterLink, useRoute } from 'vue-router'
 
-import  IconSearch from '../components/icons/IconSearch.vue'
+import IconSearch from '../components/icons/IconSearch.vue'
+
+
+//
+
+const route = useRoute()
+
+let searchText = ref("")
 
 onMounted(() => {
-  document.body.classList.add('on-search-page');
+  document.body.classList.add('on-search-page')
+  if (route.query.text !== undefined && typeof route.query.text === 'string') {
+    searchText.value = route.query.text
+  }
 });
 
 onUnmounted(() => {
@@ -17,7 +28,7 @@ onUnmounted(() => {
   <div class="search-page">
 
     <div class="search-wrapper">
-      <input type="text" class="search-input" />
+      <input type="text" class="search-input" v-model="searchText" />
       <button class="search-btn"><IconSearch /></button>
     </div>
 
