@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie'
 
-import appConfig from '../../local_appconfig.json'
+import appConfig from '../../appconfig.json'
 
 const REST_API_PATH = '/api'
 
@@ -32,6 +32,16 @@ class RestAPI {
       credentials: 'include',
       body: JSON.stringify(request)
     })
+  }
+
+  //
+
+  search = (searchstr: string) => {
+    return this.postAjax("/search", { searchstr })
+  }
+
+  searchFragment = (searchstr: string) => {
+    return this.postAjax("/search-fragment", { searchstr })
   }
 
   //
