@@ -42,19 +42,22 @@ import IconMap from './icons/IconMap.vue'
             <ul>
               <li><strong>Полезные ссылки:</strong></li>
               <li>
-                <a href="#">Министерство просвещения</a>
+                <a href="https://edu.gov.ru/">Министерство просвещения Российской Федерации</a>
               </li>
               <li>
-                <a href="#">Министерство образования</a>
+                <a href="http://minobr.permkrai.ru/">Министерство образования и науки Пермского края</a>
               </li>
               <li>
-                <a href="#">Рособрнадзор</a>
+                <a href="http://iro.perm.ru/catalog.html?cid=7">Институт развития образования Пермского края</a>
               </li>
               <li>
-                <a href="#">Институт развития образования</a>
+                <a href="https://vk.com/minprosvet">Официальное сообщество Минпросвещения России во ВКонтакте</a>
               </li>
               <li>
-                <a href="#">Официальное сообщество МинПросвещения России</a>
+                <a href="https://t.me/minprosrf">Официальный телеграм-канал Минпросвещения России</a>
+              </li>
+              <li>
+                <a href="https://vk.com/public212833993">Профессиональное сообщество "Учителя" ВКонтакте</a>
               </li>
             </ul>
           </div>
@@ -62,10 +65,10 @@ import IconMap from './icons/IconMap.vue'
             <ul>
               <li><strong>Социальные сети:</strong></li>
               <li>
-                <a href="#">КПППК в ВК</a>
+                <a href="https://vk.com/politeh_kud">КПППК в ВК</a>
               </li>
               <li>
-                <a href="#">КПППК в Телеграм</a>
+                <a href="https://max.ru/id8107000417_gos">КПППК в MAX</a>
               </li>
             </ul>
           </div>
@@ -79,7 +82,7 @@ import IconMap from './icons/IconMap.vue'
         </div>
       </div>
       <div class="footer-bottom">
-        © 2014-2025 КПППК
+        © 2014-2026 КПППК
       </div>
     </footer>
   </div>

@@ -39,3 +39,28 @@
 .search-block {
   margin: 24px 0;
 }
+
+
+.search-results {
+  margin: 24px 0;
+}
+
+.search-result {
+  display: flex;
+  align-items: center;
+}
+
+.search-result-num {
+  font-size: 18px;
+  padding: 12px 24px;
+}
+
+.search-result-link {
+  font-size: 20px;
+  color: #2f62f6;
+  text-decoration: none;
+  border-bottom: 1px solid #2f62f6;
+}
+.search-result-link:hover {
+  border-bottom: 1px solid transparent;
+}

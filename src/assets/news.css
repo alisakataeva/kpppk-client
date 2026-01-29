@@ -1,5 +1,5 @@
 .news-list *, .news-detail * {
-  font-family: 'Rubik';
+  /* font-family: 'Rubik'; */
 }
 
 .news-list {
@@ -147,7 +147,7 @@
 }
 
 .news-detail-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 36px;
 }
@@ -158,7 +158,7 @@
 }
 
 .news-detail-text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 48px;
 }

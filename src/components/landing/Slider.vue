@@ -82,24 +82,25 @@ function handleSwipeGesture() {
       <div class="slider-imgs">
 
         <Transition name="slide-fade">
-          <img class="slider-slide slide-desktop" v-show="visibleSlide1" src="../../assets/img/slider_1.png" alt="" />
+          <img class="slider-slide slide-desktop" v-show="visibleSlide1" src="../../assets/img/slider.png" alt="" />
         </Transition>
+
         <Transition name="slide-fade">
           <img
             class="slider-slide slide-mobile"
-            v-show="visibleSlide1" src="../../assets/img/mob_slider_1.png" alt=""
+            v-show="visibleSlide1" src="../../assets/img/mb_slider_1.png" alt=""
             @touchstart="handleTouchStart" @touchend="handleTouchEnd"
           />
         </Transition>
 
         <Transition name="slide-fade">
-          <img class="slider-slide slide-desktop" v-show="visibleSlide2" src="../../assets/img/slider_2.png" alt="" />
+          <img class="slider-slide slide-desktop" v-show="visibleSlide2" src="../../assets/img/slider.png" alt="" />
         </Transition>
 
         <Transition name="slide-fade">
           <img
             class="slider-slide slide-mobile" v-show="visibleSlide2"
-            src="../../assets/img/mob_slider_2.png" alt=""
+            src="../../assets/img/mb_slider_2.png" alt=""
             @touchstart="handleTouchStart" @touchend="handleTouchEnd"
           />
         </Transition>

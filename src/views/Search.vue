@@ -33,8 +33,8 @@ onUnmounted(() => {
 
 async function doSearch() {
   pageStatus.value = 'loading'
-  let response = await restAPI.searchFragment(searchText.value)
-  // let response = await restAPI.search(searchText.value)
+  data.splice(0, data.length)
+  let response = await restAPI.search(searchText.value)
   if (response.ok) {
     let json = await response.json()
     data.push(...json.page_list)
@@ -48,7 +48,7 @@ async function doSearch() {
   <div class="search-page">
 
     <div class="search-wrapper">
-      <input type="text" class="search-input" v-model="searchText" />
+      <input @keyup.enter="doSearch" type="text" class="search-input" v-model="searchText" />
       <button class="search-btn" @click="doSearch"><IconSearch /></button>
     </div>
 
@@ -59,8 +59,9 @@ async function doSearch() {
     <template v-if="pageStatus == 'loaded'">
       <div class="search-results">
           
-        <div class="search-result" v-for="res in data">
-          <div class="search-result-content" v-html="res.content"></div>
+        <div class="search-result" v-for="(res, ix) in data">
+          <div class="search-result-num">{{ ix + 1 }}</div>
+          <a :href="res.url" class="search-result-link">{{ res.title }}</a>
           <hr>
         </div>
 
