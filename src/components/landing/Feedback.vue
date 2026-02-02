@@ -16,7 +16,7 @@ let userMessage = ref("")
 let errMsg = ref("")
 let errVisible = ref(false)
 
-const modalChild = ref(null)
+const modalChild = ref<InstanceType<typeof Modal> | null>(null)
 let modalChildMsg = ref("")
 
 async function sendFeedback() {
