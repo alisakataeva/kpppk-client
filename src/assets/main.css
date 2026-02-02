@@ -702,6 +702,18 @@ button.search-btn svg {
   width: 100%;
 }
 
+.feedback-errors {
+  display: none;
+  color: #b00000;
+  font-size: 12px;
+  background: #ffe2e2;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 4px;
+}
+.feedback-errors.is-visible {
+  display: block;
+}
 @media only screen and (max-width: 1000px) {
   .feedback-left,
   .feedback-right { 

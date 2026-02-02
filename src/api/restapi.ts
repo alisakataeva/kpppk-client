@@ -36,12 +36,14 @@ class RestAPI {
 
   //
 
-  search = (searchstr: string) => {
-    return this.postAjax("/search", { searchstr })
+  landingFeedback = (email: string, name: string, message: string) => {
+    return this.postAjax("/send-feedback-email", { email, name, message })
   }
 
-  searchFragment = (searchstr: string) => {
-    return this.postAjax("/search-fragment", { searchstr })
+  //
+
+  search = (searchstr: string) => {
+    return this.postAjax("/search", { searchstr })
   }
 
   //
