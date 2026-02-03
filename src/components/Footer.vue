@@ -16,26 +16,26 @@ import IconMap from './icons/IconMap.vue'
             <ul>
               <li><strong>Разделы сайта:</strong></li>
               <li>
-                <a href="#">Сведения об образовательной организации</a>
+                <a href="/page/commoninfo/index">Сведения об образовательной организации</a>
               </li>
               <li>
-                <a href="#">Абитуриентам</a>
+                <a href="/page/applicants/admission">Абитуриентам</a>
               </li>
               <li>
-                <a href="#">Студентам</a>
+                <a href="/page/students/info">Студентам</a>
               </li>
               <li>
                 <a href="#">Преподавателям</a>
               </li>
               <li>
-                <a href="#">Профессионалитет</a>
+                <a href="/prof">Профессионалитет</a>
               </li>
               <li>
-                <a href="#">Новости</a>
+                <a href="/news">Новости</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#">Мероприятия</a>
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="footer-body-column">

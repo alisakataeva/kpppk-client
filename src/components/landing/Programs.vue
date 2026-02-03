@@ -47,36 +47,36 @@ onMounted(() => {
       </div>
     </div>
     <div class="programs">
-      <RouterLink to="/programs/1" class="program-item">
+      <div class="program-item">
         <div class="program-icon-wrapper">
           <div class="program-icon"><IconSpec1 /></div>
         </div>
         <div class="program-name">Мастер отделочных строительных и декоративных работ</div>
-      </RouterLink>
-      <RouterLink to="/programs/2" class="program-item">
+      </div>
+      <div class="program-item">
         <div class="program-icon-wrapper">
           <div class="program-icon"><IconSpec2 /></div>
         </div>
         <div class="program-name">Сетевое и системное администрирование</div>
-      </RouterLink>
-      <RouterLink to="/programs/3" class="program-item">
+      </div>
+      <div class="program-item">
         <div class="program-icon-wrapper">
           <div class="program-icon"><IconSpec3 /></div>
         </div>
         <div class="program-name">Электромонтажник по силовым сетям и электрооборудования</div>
-      </RouterLink>
-      <RouterLink to="/programs/4" class="program-item">
+      </div>
+      <div class="program-item">
         <div class="program-icon-wrapper">
           <div class="program-icon"><IconSpec4 /></div>
         </div>
         <div class="program-name">Дошкольное образование</div>
-      </RouterLink>
-      <RouterLink to="/programs/5" class="program-item">
+      </div>
+      <div class="program-item">
         <div class="program-icon-wrapper">
           <div class="program-icon"><IconSpec5 /></div>
         </div>
         <div class="program-name">Поварское и кондитерское дело</div>
-      </RouterLink>
+      </div>
       <RouterLink to="/page/applicants/admission2025" class="program-item">
         <div class="program-icon-wrapper all-programs">
           <div class="program-icon"><IconArrowRight /></div>
