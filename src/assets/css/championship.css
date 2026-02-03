@@ -1,0 +1,177 @@
+.championship * {
+  /* font-family: 'Rubik'; */
+}
+
+.championship {
+  width: 1200px;
+  margin: 20px auto;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 1640px) {
+  .championship {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .championship {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+
+.championship hr {
+  margin: 48px 0;
+  border: 0px;
+  border-top: 1px solid #ccc;
+}
+
+
+.professionalitet a {
+  color: #2f62f6;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+.professionalitet a:hover {
+  color: #658dff;
+}
+
+
+.champ-logo {
+  text-align: center;
+  margin: 3em;
+}
+.champ-logo img {
+  max-width: 200px;
+}
+
+
+.champ-thesis {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+/* @media only screen and (max-width: 1640px) {
+  .champ-thesis {
+    margin: 0;
+  }
+} */
+
+.champ-courses {
+  display: flex;
+}
+
+.champ-course {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  /* background: linear-gradient(45deg, #2dce20, #77ea38); */
+  padding: 1.5em;
+  color: #333;
+  border-radius: 24px;
+  font-weight: 700;
+}
+.champ-course.is-joinery {
+  background: #ffee6b;
+}
+.champ-course.is-plumbery {
+  background: #77ea38;
+}
+
+.champ-course-name {
+  border-bottom: 1px solid #333;
+  width: 100%;
+}
+.champ-course-docs {
+  width: 100%;
+}
+.champ-course-docs a {
+  color: #333;
+  font-size: 16px;
+}
+
+.prof-thesis-accent svg {
+  max-height: 20px;
+}
+.prof-thesis-accent svg path {
+  fill: #2f62f6;
+}
+
+
+
+.champ-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 1em;
+}
+
+.champ-info {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+
+
+.champ-accent-list {
+  padding: 0;
+  margin: 0 3em 3em 3em;
+  list-style: none;
+  line-height: 135%;
+}
+@media only screen and (max-width: 1040px) {
+  .champ-accent-list {
+    margin: 0 0 3em 0;
+  }
+}
+
+.champ-accent-list > li {
+  width: 100%;
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.champ-accent-list > li:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.champ-accent-list > li::before {
+  content: "";
+  width: .8em;
+  height: .8em;
+  margin-right: .8em;
+  display: inline-block;
+  background-color: #4ecc0a;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  top: .3em;
+}
+
+
+.prof-spec {
+  font-size: 1rem;
+}
+
+
+.champ-join  {
+  width: 100%;
+  text-align: center;
+}
+.champ-join img {
+  max-width: 400px;
+}
+
+
+.champ-info a {
+  color: #3fb200;
+  text-decoration: none;
+}

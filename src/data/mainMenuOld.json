@@ -1,0 +1,165 @@
+[
+    {
+      "order": 1,
+      "key": "common_info",
+      "title": "Основные сведения",
+      "href": null,
+      "sublinks": [
+        [
+          {
+            "order": 1,
+            "title": "Основные сведения",
+            "href": "/page/commoninfo/index"
+          },
+          {
+            "order": 2,
+            "title": "Структура и органы управления образовательной организацией",
+            "href": "/page/commoninfo/structure"
+          },
+          {
+            "order": 3,
+            "title": "Документы",
+            "href": "/page/commoninfo/docs"
+          },
+          {
+            "order": 4,
+            "title": "Образование",
+            "href": "/page/commoninfo/edu"
+          },
+          {
+            "order": 6,
+            "title": "Руководство",
+            "href": "/page/commoninfo/management"
+          },
+          {
+            "order": 7,
+            "title": "Педагогический состав",
+            "href": "/page/commoninfo/teachingstaff"
+          }
+        ],
+        [
+          {
+            "order": 8,
+            "title": "Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда",
+            "href": "/page/commoninfo/equipment-and-environment"
+          },
+          {
+            "order": 10,
+            "title": "Платные образовательные услуги",
+            "href": "/page/commoninfo/paid-services"
+          },
+          {
+            "order": 11,
+            "title": "Финансово-хозяйственная деятельность",
+            "href": "/page/commoninfo/fin-activities"
+          },
+          {
+            "order": 12,
+            "title": "Вакантные места для приема (перевода) обучающихся",
+            "href": "/page/commoninfo/admission-vacancies"
+          },
+          {
+            "order": 13,
+            "title": "Стипендии и меры поддержки обучающихся",
+            "href": "/page/commoninfo/scholarship"
+          }
+        ],
+        [
+          {
+            "order": 14,
+            "title": "Международное сотрудничество",
+            "href": "/page/commoninfo/international"
+          },
+          {
+            "order": 15,
+            "title": "Организация питания",
+            "href": "/page/commoninfo/catering"
+          },
+          {
+            "order": 16,
+            "title": "Образовательные стандарты и требования",
+            "href": "/page/commoninfo/edu-standards"
+          }
+        ]
+      ]
+    },
+    {
+      "order": 2,
+      "key": "applicants",
+      "title": "Поступающим",
+      "href": null,
+      "sublinks": [
+        [
+          {
+            "order": 0,
+            "title": "Перечень специальностей 2025-2026",
+            "href": "/page/applicants/admission2025"
+          },
+          {
+            "order": 1,
+            "title": "Приёмная комиссия",
+            "href": "/page/applicants/admission"
+          },
+          {
+            "order": 2,
+            "title": "Документы",
+            "href": "/page/applicants/docs"
+          },
+          {
+            "order": 3,
+            "title": "Общежитие",
+            "href": "/page/applicants/dormitory"
+          }
+        ],
+        [
+          {
+            "order": 4,
+            "title": "Обучение на платной основе",
+            "href": "/page/applicants/paid-edu"
+          },
+          {
+            "order": 5,
+            "title": "День открытых дверей",
+            "href": "/page/applicants/open-day"
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "order": 3,
+      "key": "students",
+      "title": "Студентам",
+      "href": null,
+      "sublinks": [
+        [
+          {
+            "order": 1,
+            "title": "Информация для обучающихся ГБПОУ \"КПППК\"",
+            "href": "/page/students/info"
+          }
+        ]
+      ]
+    },
+    {
+      "order": 4,
+      "key": "to_teachers",
+      "title": "Преподавателям",
+      "href": null,
+      "sublinks": [
+        [
+          {
+            "order": 1,
+            "title": "Методическая работа",
+            "href": "/metod-rabota"
+          }
+        ]
+      ]
+    },
+    {
+      "order": 5,
+      "key": "professionalitet",
+      "title": "Профессионалитет",
+      "href": "/prof"
+    }
+  ]

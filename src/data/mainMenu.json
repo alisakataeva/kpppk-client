@@ -142,24 +142,15 @@
       ]
     },
     {
-      "order": 4,
-      "key": "to_teachers",
-      "title": "Преподавателям",
-      "href": null,
-      "sublinks": [
-        [
-          {
-            "order": 1,
-            "title": "Методическая работа",
-            "href": "/metod-rabota"
-          }
-        ]
-      ]
-    },
-    {
       "order": 5,
       "key": "professionalitet",
       "title": "Профессионалитет",
       "href": "/prof"
+    },
+    {
+      "order": 10,
+      "key": "championship",
+      "title": "Чемпионат",
+      "href": "/champ"
     }
   ]

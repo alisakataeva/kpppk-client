@@ -14,6 +14,7 @@ import ProgramDetail from '@/views/programs/ProgramDetail.vue'
 import CommonInfoPage from '@/views/pages/CommonInfoPage.vue'
 
 import Professionalitet from '@/views/Professionalitet.vue'
+import Championship from '@/views/Championship.vue'
 import Schedule from '@/views/Schedule.vue'
 
 import PageNotFound from '@/views/PageNotFound.vue'
@@ -37,7 +38,8 @@ const router = createRouter({
     { path: '/programs', name: 'programs', component: ProgramList, },
     { path: '/programs/:id', name: 'programDetail', component: ProgramDetail, },
 
-    { path: '/prof', name: 'profPage', component: Professionalitet, },
+    { path: '/prof', name: 'profPage', component: Professionalitet },
+    { path: '/champ', name: 'champPage', component: Championship },
     { path: '/schedule', name: 'schedule', component: Schedule },
     { path: '/sitemap', name: 'sitemap', component: SiteMap },
     { path: '/search', name: 'search', component: Search },
