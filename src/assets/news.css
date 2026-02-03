@@ -45,6 +45,12 @@
   margin-bottom: 1em;
 }
 
+.news-block-img img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .news-block-content {
   display: flex;
   flex-direction: column;

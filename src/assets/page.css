@@ -29,7 +29,7 @@
 }
 
 .page-wrapper .professionalitet-label {
-  background: #CD0074;
+  background-color: #0000CD;
   color: #fff;
   padding: 4px 12px;
   font-size: 12px;
@@ -39,7 +39,7 @@
 }
 
 .page-wrapper .licence-label {
-  background-color: #0000CD;
+  background: #CD0074;
   color: #fff;
   padding: 4px 12px;
   font-size: 12px;
