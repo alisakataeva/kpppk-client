@@ -18,14 +18,14 @@ import Ch from '../components/icons/IconProfessionalitet.vue'
     <div class="champ-courses">
 
       <div class="champ-course is-joinery">
-        <div class="champ-course-name">РЧ 26 Столярное дело</div>
+        <div class="champ-course-name">РЭЧ 26 Столярное дело</div>
         <div class="champ-course-docs">
           <a href="https://disk.yandex.ru/d/CXYwMU7m552mkQ">Документы</a>
         </div>
       </div>
 
       <div class="champ-course is-plumbery">
-        <div class="champ-course-name">ККД 2026 Сантехника и отопление</div>
+        <div class="champ-course-name">РЭЧ 2026 Сантехника и отопление</div>
         <div class="champ-course-docs">
           <a href="https://disk.yandex.ru/d/OWykEVvbIH6KkA">Документы</a>
         </div>
