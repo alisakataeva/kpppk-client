@@ -33,8 +33,10 @@ async function getNewsDetail(id: number) {
     let json = await response.json()
     prepareNewsText(json.news_detail)
     Object.assign(state.news, json.news_detail)
+    document.title = `${state.news.title} - КПППК`;
     pageStatus.value = 'loaded'
   } else {
+    document.title = 'Страница не найдена'
     pageStatus.value = 'notfound'
   }
 }

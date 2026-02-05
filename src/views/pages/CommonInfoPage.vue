@@ -65,12 +65,14 @@ async function updatePageContents() {
   if (currentPage) {
     state.pageGroupName = currentPage.group_name
     currentPageTitle.value = currentPage.title
+    document.title = `${currentPage.title} - КПППК`;
   }
   
   if (currentPage && currentPage.content) {
     currentPageContents.value = currentPage.content
     pageStatus.value = 'loaded'
   } else {
+    document.title = `Страница не найдена`;
     pageStatus.value = 'notfound'
   }
 }
