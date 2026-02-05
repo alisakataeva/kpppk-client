@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie'
 
-import appConfig from '../../appconfig.json'
+import appConfig from '../../local_appconfig.json'
 
 const REST_API_PATH = '/api'
 

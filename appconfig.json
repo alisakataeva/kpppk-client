@@ -1,5 +1,5 @@
 {
-  "server_schema": "https",
-  "server_host": "akataeva.pythonanywhere.com",
-  "server_port": ""
+  "server_schema": "http",
+  "server_host": "192.168.0.9",
+  "server_port": "8000"
 }
