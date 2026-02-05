@@ -25,17 +25,14 @@ import IconMap from './icons/IconMap.vue'
                 <a href="/page/students/info">Студентам</a>
               </li>
               <li>
-                <a href="#">Преподавателям</a>
+                <a href="/prof">Профессионалитет</a>
               </li>
               <li>
-                <a href="/prof">Профессионалитет</a>
+                <a href="/champ">Чемпионат</a>
               </li>
               <li>
                 <a href="/news">Новости</a>
               </li>
-              <!-- <li>
-                <a href="#">Мероприятия</a>
-              </li> -->
             </ul>
           </div>
           <div class="footer-body-column">
