@@ -137,6 +137,43 @@
             "order": 1,
             "title": "Информация для обучающихся ГБПОУ \"КПППК\"",
             "href": "/page/students/info"
+          },
+          {
+            "order": 2,
+            "title": "Система дистанционного обучения",
+            "href": "/page/students/distant"
+          },
+          {
+            "order": 3,
+            "title": "Памятки для студентов",
+            "href": "/page/students/tips"
+          }
+        ],
+        [
+          {
+            "order": 1,
+            "title": "Расписание кружков и секций",
+            "href": "/page/students/schedule"
+          },
+          {
+            "order": 2,
+            "title": "Студенческий спортивный клуб \"Звезда\" ГБПОУ \"КПППК\"",
+            "href": "/page/students/zvezda"
+          },
+          {
+            "order": 3,
+            "title": "Спортивные секции",
+            "href": "/page/students/sports"
+          },
+          {
+            "order": 4,
+            "title": "Творческие объединения",
+            "href": "/page/students/art"
+          },
+          {
+            "order": 5,
+            "title": "Библиотека",
+            "href": "/page/students/library"
           }
         ]
       ]

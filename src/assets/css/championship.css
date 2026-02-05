@@ -172,6 +172,10 @@
 
 
 .champ-info a {
-  color: #3fb200;
+  color: #2d8000;
   text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+.champ-info a:hover {
+  color: #cab934;
 }
