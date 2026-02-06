@@ -45,6 +45,15 @@ async function doSearch() {
 </script>
 
 <template>
+
+  <div class="breadcrumbs-outer">
+    <div class="breadcrumbs">
+      <RouterLink to="/">Главная</RouterLink>
+      <span class="breadcrumbs-divider">/</span>
+      <span class="breadcrumbs-current">Поиск</span>
+    </div>
+  </div>
+
   <div class="search-page">
 
     <div class="search-wrapper">
@@ -64,6 +73,8 @@ async function doSearch() {
           <a :href="res.url" class="search-result-link">{{ res.title }}</a>
           <hr>
         </div>
+
+        <div class="search-empty" v-if="data.length == 0">Ничего не найдено</div>
 
       </div>
     </template>

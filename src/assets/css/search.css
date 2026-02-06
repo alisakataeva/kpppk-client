@@ -1,5 +1,6 @@
 .search-page {
   width: 1600px;
+  min-height: 50vh;
   margin: 20px auto;
 }
 
@@ -63,4 +64,10 @@
 }
 .search-result-link:hover {
   border-bottom: 1px solid transparent;
+}
+
+
+.search-empty {
+  font-size: 14px;
+  color: #999;
 }
