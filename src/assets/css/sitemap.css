@@ -2,10 +2,14 @@
   width: 1600px;
   display: flex;
   flex-wrap: wrap;
-  margin: 8px auto;
+  margin: 0 auto;
 }
 .sitemap-column {
   width: 33%;
+  border-left: 1px solid #eee;
+  padding: 0 1em 0 3em;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 
@@ -25,15 +29,19 @@
   }
   .sitemap-column {
     width: 100%;
-    margin: 0 20px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
 
 .sitemap-block {
-  margin: 32px 0;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
+}
+.sitemap-block:last-child {
+  margin-bottom: 0;
 }
 
 .sitemap-header-link {
@@ -55,6 +63,7 @@
 }
 .sitemap-link-wrapper {
   margin: 4px 0;
+  padding-left: 1.5em;
 }
 .sitemap-link {
   color: var(--color-2);
