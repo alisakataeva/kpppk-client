@@ -21,10 +21,6 @@ import PageNotFound from '@/views/PageNotFound.vue'
 import SiteMap from '@/views/SiteMap.vue'
 import Search from '@/views/Search.vue'
 
-// non upload pages
-import EduPage from '@/views/pages/EduPage.vue'
-import DocsPage from '@/views/pages/DocsPage.vue'
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   scrollBehavior(to, from, savedPosition) {
