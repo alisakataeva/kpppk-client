@@ -255,7 +255,7 @@
         {
           "order": 3,
           "title": "Расписание занятий",
-          "href": "/page/students/schedule"
+          "href": "/page/students/class-schedule"
         },
         {
           "order": 4,
@@ -267,7 +267,7 @@
         {
           "order": 10,
           "title": "Расписание кружков и секций",
-          "href": "/page/students/schedule"
+          "href": "/page/students/club-schedule"
         },
         {
           "order": 11,
