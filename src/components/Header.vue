@@ -61,7 +61,7 @@ function goToSearchPage() {
             </span>
             <span class="header-contact-mail">
               <IconMail />
-              <a href="mailto:kppt.kud@mail.ru">kppt.kud@mail.ru</a>
+              <a href="mailto:kudkpppk@kudkpppk.permkrai.ru">kudkpppk@kudkpppk.permkrai.ru</a>
             </span>
           </div>
         </div>
