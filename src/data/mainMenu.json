@@ -181,18 +181,18 @@
       [
         {
           "order": 1,
-          "title": "Приём на 2026-2027 учебный год",
-          "href": "/page/applicants/admission2026"
-        },
-        {
-          "order": 2,
           "title": "Приёмная комиссия",
           "href": "/page/applicants/admission"
         },
         {
+          "order": 2,
+          "title": "Специальности и профессии",
+          "href": "/page/applicants/prefessions"
+        },
+        {
           "order": 3,
-          "title": "План приёма",
-          "href": "/page/applicants/admission-progress"
+          "title": "Вступительные испытания",
+          "href": "/page/applicants/entrance-tests"
         },
         {
           "order": 4,
@@ -228,8 +228,18 @@
         },
         {
           "order": 10,
-          "title": "Профессиональное обучение (Многофункциональный центр прикладных квалификаций)",
+          "title": "Профессиональное обучение",
           "href": "/page/applicants/prof-edu"
+        },
+        {
+          "order": 11,
+          "title": "Образовательное кредитование",
+          "href": "/page/applicants/loans"
+        },
+        {
+          "order": 12,
+          "title": "День открытых дверей",
+          "href": "/page/applicants/open-day"
         }
       ],
       []
