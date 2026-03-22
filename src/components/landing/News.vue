@@ -48,7 +48,6 @@ onMounted(() => {
         <RouterLink :to="'/news/'+n.id" v-for="(n, ix) in data" :key="'news'+ix" class="new-item">
           <img :src="SERVER_BASE_PATH+n.image" class="new-pic" alt="" />
           <div class="new-title">{{ n.title }}</div>
-          <div class="new-content" v-html="n.html"></div>
         </RouterLink>
       </div>
       <RouterLink to="/news" class="btn btn-primary align-right">Показать больше</RouterLink>
