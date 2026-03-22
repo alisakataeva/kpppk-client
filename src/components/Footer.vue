@@ -1,6 +1,8 @@
 <script setup lang="ts">
 
 import IconMap from './icons/IconMap.vue'
+import IconMax from './icons/IconMax.vue'
+import IconVk from './icons/IconVk.vue'
 
 </script>
 
@@ -59,15 +61,13 @@ import IconMap from './icons/IconMap.vue'
             </ul>
           </div>
           <div class="footer-body-column">
-            <ul>
-              <li><strong>Социальные сети:</strong></li>
-              <li>
-                <a href="https://vk.com/politeh_kud">КПППК в ВК</a>
-              </li>
-              <li>
-                <a href="https://max.ru/id8107000417_gos">КПППК в MAX</a>
-              </li>
-            </ul>
+            <div class="social-links">
+              <strong>Социальные сети:</strong>
+              <div class="social-icons">
+                <a target="_blank" href="https://vk.com/politeh_kud"><IconVk /></a>
+                <a target="_blank" href="https://max.ru/id8107000417_gos"><IconMax /></a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="footer-body-right">
