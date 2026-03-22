@@ -36,6 +36,10 @@ class RestAPI {
 
   //
 
+  getSliders = () => {
+    return this.postAjax("/slider")
+  }
+
   landingFeedback = (email: string, name: string, message: string) => {
     return this.postAjax("/send-feedback-email", { email, name, message })
   }

@@ -34,3 +34,10 @@ export interface Page {
   content: string;
   order: number;
 }
+
+export interface Slider {
+  image_desktop: string;
+  image_mobile: string;
+  order: number;
+  url: string;
+}
