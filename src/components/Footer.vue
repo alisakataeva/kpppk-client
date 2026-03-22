@@ -115,3 +115,5 @@ import IconVk from './icons/IconVk.vue'
 }
 
 </style>
+
+<!-- test -->
