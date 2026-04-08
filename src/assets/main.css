@@ -83,7 +83,6 @@ button.search-btn svg {
   align-items: center;
   justify-content: right;
   font-size: 13px;
-  font-weight: 500;
   width: 100%;
 }
 .header-info {
@@ -579,9 +578,6 @@ button.search-btn svg {
 
 
 /* PROGRAMS */
-
-.programs-wrapper {
-}
 
 .programs-title {
   text-align: center;
