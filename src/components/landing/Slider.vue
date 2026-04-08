@@ -7,7 +7,7 @@ import { useGlobalStore } from '@/stores/global'
 import { type Slider } from '@/interfaces/db_interfaces'
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -34,7 +34,7 @@ onMounted(() => {
 })
 
 
-const modules = [Pagination];
+const modules = [Pagination, Autoplay];
 
 </script>
 
@@ -48,6 +48,10 @@ const modules = [Pagination];
           clickable: true,
         }"
         :modules="modules"
+        :autoplay="{
+          delay: 5000,
+          disableOnInteraction: false,
+        }"
       >
 
       <swiper-slide v-for="slideItem in data">
